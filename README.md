@@ -1,8 +1,14 @@
 # @meatbags/element
 
-Create nested DOM elements from JSON. Example:
+Create nested DOM elements from JSON.
 
+Installation:
 ```
+npm install @meatbags/element
+```
+
+Example usage:
+```js
 import { Element } from '@meatbags/element';
 
 let myModal = Element({

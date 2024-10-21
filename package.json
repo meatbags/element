@@ -1,6 +1,6 @@
 {
   "name": "@meatbags/element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "build",
     "packages.json",
     "README.md",
+    "index.js",
     "src"
   ],
   "repository": {
@@ -29,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/meatbags/element/issues"
   },
-  "homepage": "https://github.com/meatbags/element#readme"
+  "homepage": "https://github.com/meatbags/element#readme",
+  "keywords": [
+    "HTML", "DOM"
+  ]
 }
