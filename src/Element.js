@@ -1,14 +1,16 @@
 /** Element */
 
-const Element = prop => {
-  if (prop instanceof HTMLElement || prop === null) {
-    return prop;
+const Element = props => {
+  if (props instanceof HTMLElement || props === null) {
+    return props;
   }
 
-  const e = document.createElement(prop.type || 'div');
+  // create element
+  const e = document.createElement(props.type || props.nodeType || 'div');
 
-  for (const key in prop) {
-    const value = prop[key];
+  //
+  for (const key in props) {
+    const value = props[key];
     switch (key) {
       case 'class':
         value.split(' ').forEach(c => e.classList.add(c));
@@ -37,6 +39,7 @@ const Element = prop => {
         for (const k in value)
           e.setAttribute(k, value[k]);
         break;
+      case 'data':
       case 'dataset':
         for (const k in value)
           e.dataset[k] = value[k];
@@ -45,6 +48,7 @@ const Element = prop => {
         for (const k in value)
           e.style[k] = value[k];
       case 'type':
+      case 'nodeType':
         break;
       default:
         e[key] = value;
@@ -54,4 +58,4 @@ const Element = prop => {
   return e;
 };
 
-export default Element;
+export { Element };

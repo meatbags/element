@@ -1,0 +1,33 @@
+{
+  "name": "@meatbags/element",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pack": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "files": [
+    "build",
+    "packages.json",
+    "README.md",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meatbags/element.git"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "author": "meatbags",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meatbags/element/issues"
+  },
+  "homepage": "https://github.com/meatbags/element#readme"
+}
