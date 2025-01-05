@@ -1,6 +1,7 @@
 /** Element */
 
 const Element = props => {
+  // allow HTMLElements or null elements if required
   if (props instanceof HTMLElement || props === null) {
     return props;
   }
