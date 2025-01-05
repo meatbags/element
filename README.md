@@ -1,6 +1,6 @@
 # @meatbags/element
 
-A micro-library for creating bespoke DOM elements from Javascript objects. Works 1:1 with all DOM features. This library is a barebones replacement for View (as in the View in MVC) libraries, covering common use-cases.
+A micro-library for creating bespoke DOM elements from Javascript objects. Works 1:1 with DOM features. This library is a barebones replacement for View (as in the View in MVC) libraries, covering common use-cases. DOM knowledge required.
 
 Installation:
 ```
