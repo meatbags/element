@@ -1,6 +1,6 @@
 # @meatbags/element
 
-Create nested DOM elements from JSON.
+A micro-library for creating bespoke DOM elements.
 
 Installation:
 ```
