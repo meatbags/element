@@ -8,7 +8,7 @@ const Element = props => {
   // create element
   const e = document.createElement(props.type || props.nodeType || 'div');
 
-  //
+  // build
   for (const key in props) {
     const value = props[key];
     switch (key) {
