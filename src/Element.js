@@ -1,6 +1,7 @@
 /** Element */
 
 const Element = props => {
+  // allow HTMLElements or null elements if required
   if (props instanceof HTMLElement || props === null) {
     return props;
   }
@@ -8,7 +9,11 @@ const Element = props => {
   // create element
   const e = document.createElement(props.type || props.nodeType || 'div');
 
+<<<<<<< HEAD
   // build
+=======
+  // attach attributes, events, do nesting, etc
+>>>>>>> 9e523ac70fcb1dcc9712267676d2d66dd8e6ec61
   for (const key in props) {
     const value = props[key];
     switch (key) {
