@@ -6,3 +6,20 @@ Installation:
 ```
 npm install @meatbags/element
 ```
+
+Example usage:
+```javascript
+document.body.appendChild(Element({
+  class: 'container',
+  children: [{
+    id: 'my-button',
+    style: {
+      cursor: 'pointer',
+    },
+    innerText: 'Greet',
+    addEventListener: {
+      click: () => alert('Hello, world!'),
+    },
+  }],
+}));
+```
